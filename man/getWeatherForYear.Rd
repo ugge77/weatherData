@@ -3,7 +3,7 @@
 \title{Get weather data for one full year}
 \usage{
 getWeatherForYear(station_id, year, station_type = "airportCode",
-  opt_write_to_file = FALSE)
+  opt_detailed = FALSE, opt_write_to_file = FALSE)
 }
 \arguments{
   \item{station_id}{is a valid Weather Station ID (example:
@@ -17,6 +17,10 @@ getWeatherForYear(station_id, year, station_type = "airportCode",
 
   \item{station_type}{= "airportCode" (3 or 4 letter
   airport code) or "ID" (Wx call Sign)}
+
+  \item{opt_detailed}{Boolen flag to indicate if detailed
+  records for the station are desired. (default FALSE). By
+  default only one records per date is returned.}
 
   \item{opt_write_to_file}{If TRUE, the resulting dataframe
   will be stored in a CSV file.  Default is FALSE}
@@ -40,6 +44,9 @@ Dec-31 of the given year.
 \examples{
 \dontrun{
 dat <- getWeatherForYear("KLGA", 2013)
+
+# If opt_detailed is turned on, you will get a large data frame
+wx_Singapore <- getWeatherForYear("SIN", 2014, opt_detailed=TRUE)
 }
 }
 \references{

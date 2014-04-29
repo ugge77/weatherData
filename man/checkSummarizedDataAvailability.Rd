@@ -1,9 +1,9 @@
-\name{checkDataAvailabilityForDateRange}
-\alias{checkDataAvailabilityForDateRange}
-\title{Quick Check to see if WeatherUnderground has Weather Data for given station
- for a range of dates}
+\name{checkSummarizedDataAvailability}
+\alias{checkSummarizedDataAvailability}
+\title{Quick Check to see if WeatherUnderground has Summarized Weather Data for given station
+ for a custom range of dates}
 \usage{
-checkDataAvailabilityForDateRange(station_id, start_date, end_date,
+checkSummarizedDataAvailability(station_id, start_date, end_date = NULL,
   station_type = "airportCode")
 }
 \arguments{
@@ -18,7 +18,8 @@ checkDataAvailabilityForDateRange(station_id, start_date, end_date,
 
   \item{end_date}{is a a valid string representing a date
   in the past (YYYY-MM-DD, all numeric) and is greater than
-  start_date}
+  start_date.  Default is NULL, in which case the end_date
+  is taken to the same as the start_date}
 }
 \value{
 1 if the Station did have weather records, 0 if nothing was
@@ -30,14 +31,15 @@ of dates, this function is useful to see if the data even
 exists.
 }
 \details{
-This functions checks for just the first and the last date
-in the interval, not the days in between
+This functions build a custom URL and checks for the data.
+If available, it will find one row for each date in the
+date range.
 }
 \examples{
 \dontrun{
-data_okay <- checkDataAvailabilityForDateRange("BOS",
-                                               "2011-01-01",
-                                               "2011-03-31")
+data_okay <- checkSummarizedDataAvailability("GIG",
+                                             "2000-01-01",
+                                             "2005-12-31")
 }
 }
 

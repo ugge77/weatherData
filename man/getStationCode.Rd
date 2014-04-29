@@ -18,7 +18,7 @@ A one row data frame containing: \itemize{ \item A string
 of Station Name that matched \item the region. (two-letter
 state abbreviation if in the US) \item The 4-letter weather
 station ID. (This is the string you use when calling
-\code{getWeatherData()}) }
+\code{getDetailedWeather()}) }
 }
 \description{
 This function goes through the USAirportWeatherStations
@@ -26,12 +26,13 @@ dataset and looks for matches. Usually, the 4 letter
 airportCode is what you are after.
 }
 \examples{
-getStationCode("Denver")
+getStationCode("Fiji")
+getStationCode("Athens", region="GA") # in the US State of Georgia
 }
 \references{
 For a world-wide list of possible stations, be sure to look
 at \url{http://weather.rap.ucar.edu/surface/stations.txt}
 The ICAO (4-letter code is what needs to be input to
-\code{getWeatherData()})
+\code{getDetailedWeather()})
 }
 
