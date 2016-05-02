@@ -8,7 +8,7 @@ require(plyr)
 #' @param check_date is a a valid string representing a date in the past (string "YYYY-MM-DD")
 #' @param station_type is either \code{airportCode} or \code{id}
 #' @references For a list of valid Weather Stations, try this format
-#'  \url{http://www.wunderground.com/weatherstation/ListStations.asp?selectedCountry=United+States}
+#'  \url{https://www.wunderground.com/weatherstation/ListStations.asp?selectedCountry=United+States}
 #'  and replace with your country of interest
 #' @return 1 if the station does have weather records for input date, 
 #'  0 if no records were found  
@@ -204,7 +204,7 @@ checkSummarizedDataAvailability<- function (station_id,
 #'   then \code{custom_columns} must be specified.
 #' @import plyr
 #' @references For a list of valid Weather Stations, try this format
-#'  \url{http://www.wunderground.com/weatherstation/ListStations.asp?selectedCountry=United+States}
+#'  \url{https://www.wunderground.com/weatherstation/ListStations.asp?selectedCountry=United+States}
 #'  and replace with your country of interest
 #' @return A data frame with each row containing: \itemize{
 #' \item Date and Time stamp (for each date specified)
@@ -378,7 +378,7 @@ getWeatherForDate <- function(station_id,
 #' @param opt_write_to_file If TRUE, the resulting dataframe will be stored in a CSV file. 
 #'  Default is FALSE
 #' @references For a list of valid Weather Stations, try this format
-#'  \url{http://www.wunderground.com/weatherstation/ListStations.asp?selectedCountry=United+States}
+#'  \url{https://www.wunderground.com/weatherstation/ListStations.asp?selectedCountry=United+States}
 #'  and replace with your country of interest
 #' @return A data frame with each row containing: \itemize{
 #' \item Date and Time stamp (for each date specified)
@@ -439,7 +439,7 @@ getWeatherForYear <- function(station_id,
 #' \item Temperature for the station in Farenheit (or Celcius)
 #' }
 #' @references For a list of valid Weather Stations, try this format
-#'  \url{http://www.wunderground.com/weatherstation/ListStations.asp?selectedCountry=United+States}
+#'  \url{https://www.wunderground.com/weatherstation/ListStations.asp?selectedCountry=United+States}
 #'  and replace with your country of interest
 #' 
 #' @examples 
@@ -576,7 +576,7 @@ getTemperatureForDate <- function(station_id,
      #'  Default is FALSE
      #' @seealso getWeatherForDate, getDetailedWeather
      #' @references For a list of valid Weather Stations, try this format
-     #'  \url{http://www.wunderground.com/weatherstation/ListStations.asp?selectedCountry=United+States}
+     #'  \url{https://www.wunderground.com/weatherstation/ListStations.asp?selectedCountry=United+States}
      #'  and replace with your country of interest
      #' @return A data frame with each row containing: \itemize{
      #' \item Date and Time stamp (for each date specified)

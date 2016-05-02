@@ -234,7 +234,7 @@ createWU_SingleDateURL <- function (station,
   # compose final url
   # Type can be ID OR Airport  
   if(station_type=="id") {
-    base_url <- 'http://www.wunderground.com/weatherstation/WXDailyHistory.asp?'
+    base_url <- 'https://www.wunderground.com/weatherstation/WXDailyHistory.asp?'
     final_url <- paste0(base_url,
                         'ID=', station,
                         '&month=', m,
@@ -245,7 +245,7 @@ createWU_SingleDateURL <- function (station,
   
   #for airport codes
   if(station_type=="airportcode") {
-    airp_url = 'http://www.wunderground.com/history/airport/'
+    airp_url = 'https://www.wunderground.com/history/airport/'
     coda = '/DailyHistory.html?format=1'    
     
     #If an airportLetterCode is not supplied, try with K
@@ -369,7 +369,7 @@ createWU_Custom_URL <- function (station,
   # compose final CUSTOM url
   #this part needs to be verified for custom History with WU
   if(station_type=="id") {# Type can be ID OR Airport      
-    base_url <- 'http://www.wunderground.com/weatherstation/WXDailyHistory.asp?'
+    base_url <- 'https://www.wunderground.com/weatherstation/WXDailyHistory.asp?'
     final_url <- paste0(base_url,
                         'ID=', station,
                         '&month=', m,
@@ -380,7 +380,7 @@ createWU_Custom_URL <- function (station,
   
   #for airport codes
   if(station_type=="airportcode") {
-    airp_url = 'http://www.wunderground.com/history/airport/'
+    airp_url = 'https://www.wunderground.com/history/airport/'
     mid = '/CustomHistory.html?'
     coda = '&req_city=NA&req_state=NA&req_statename=NA&format=1'
                     

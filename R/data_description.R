@@ -8,7 +8,7 @@
 #' @docType data
 #' @usage data(London2013)
 #' @references 
-#' \url{http://www.wunderground.com/history/airport/EGLL/2013/1/1/DailyHistory.html?format=1}
+#' \url{https://www.wunderground.com/history/airport/EGLL/2013/1/1/DailyHistory.html?format=1}
 #' @keywords data
 #' 
 NULL
@@ -23,7 +23,7 @@ NULL
 #' @docType data
 #' @usage data(Mumbai2013)
 #' @references 
-#' \url{http://www.wunderground.com/history/airport/VABB/2014/1/1/DailyHistory.html?format=1}
+#' \url{https://www.wunderground.com/history/airport/VABB/2014/1/1/DailyHistory.html?format=1}
 #' @keywords data
 #' 
 NULL
@@ -38,7 +38,7 @@ NULL
 #' @docType data
 #' @usage data(NewYork2013)
 #' @references 
-#' \url{http://www.wunderground.com/history/airport/KLGA/2013/1/1/DailyHistory.html?format=1}
+#' \url{https://www.wunderground.com/history/airport/KLGA/2013/1/1/DailyHistory.html?format=1}
 #' @keywords data
 #' 
 NULL
@@ -54,7 +54,7 @@ NULL
 #' @docType data
 #' @usage data(SFO2013Summarized)
 #' @references 
-#' \url{http://www.wunderground.com/history/airport/SFO/2013/1/1/CustomHistory.html?dayend=31&monthend=12&yearend=2013&req_city=NA&req_state=NA&req_statename=NA&format=1}
+#' \url{https://www.wunderground.com/history/airport/SFO/2013/1/1/CustomHistory.html?dayend=31&monthend=12&yearend=2013&req_city=NA&req_state=NA&req_statename=NA&format=1}
 #' @keywords data
 #' 
 NULL
@@ -69,7 +69,7 @@ NULL
 #' @docType data
 #' @usage data(SFO2013)
 #' @references 
-#' \url{http://www.wunderground.com/history/airport/KSFO/2013/1/1/DailyHistory.html?format=1}
+#' \url{https://www.wunderground.com/history/airport/KSFO/2013/1/1/DailyHistory.html?format=1}
 #' @keywords data
 #' 
 NULL
@@ -84,7 +84,7 @@ NULL
 #' @docType data
 #' @usage data(SFO2012)
 #' @references 
-#' \url{http://www.wunderground.com/history/airport/KSFO/2012/1/1/DailyHistory.html?format=1}
+#' \url{https://www.wunderground.com/history/airport/KSFO/2012/1/1/DailyHistory.html?format=1}
 #' @keywords data
 #' 
 NULL
@@ -102,7 +102,7 @@ NULL
 #' @docType data
 #' @usage data(USAirportWeatherStations)
 #' @references 
-#' \url{http://www.wunderground.com/about/faq/US_cities.asp}
+#' \url{https://www.wunderground.com/about/faq/US_cities.asp}
 #' @keywords data
 #' 
 NULL
